@@ -13,6 +13,12 @@
     }
   }
 
+  .nav-item.active {
+    .nav-link {
+      color: #ff7158;
+    }
+  }
+
   .profile-picture {
     max-height: 45px;
   }

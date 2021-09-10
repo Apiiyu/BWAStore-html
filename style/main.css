@@ -10869,6 +10869,10 @@ footer p {
   }
 }
 
+.navbar-store .nav-item.active .nav-link {
+  color: #ff7158;
+}
+
 .navbar-store .profile-picture {
   max-height: 45px;
 }
@@ -10971,5 +10975,28 @@ footer p {
   font-weight: 500;
   font-size: 16px;
   color: #ff7158;
+}
+
+.store-breadcrumbs .breadcrumb {
+  background: transparent;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding: 0 1.5rem;
+}
+
+.store-breadcrumbs .breadcrumb-item.active {
+  font-weight: 300;
+}
+
+.store-breadcrumbs .breadcrumb-item.active a {
+  color: #ff7158;
+}
+
+.store-breadcrumbs a {
+  color: #979797;
 }
 /*# sourceMappingURL=main.css.map */
