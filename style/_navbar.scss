@@ -28,9 +28,9 @@
     color: #fefefe;
     margin-left: -10px;
   }
+}
 
-  .navbar-fixed-top.scrolled {
-    background: #fff !important;
-    transition: background 200ms linear;
-  }
+.scrolled {
+  background-color: #fff !important;
+  transition: background-color 300ms linear;
 }
