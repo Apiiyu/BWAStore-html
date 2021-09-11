@@ -130,6 +130,9 @@
         </div>
       </section>
     </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Product Details Section Begin -->
 
     <!-- Footer Section Begin -->
     <footer>
@@ -150,5 +153,40 @@
       AOS.init();
     </script>
     <script src="/script/navbar.js"></script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      const gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 1,
+          photos: [
+            {
+              id: 1,
+              url: "/images/product-details1.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/product-details2.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/product-details3.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/product-details4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActivePhoto(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
+    </script>
   </body>
 </html>
